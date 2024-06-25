@@ -1,4 +1,4 @@
-/* styles.css */
+
 body {
     background-color: #0B0E1A;
     font-family: 'Arial', sans-serif;
@@ -13,4 +13,90 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+.status-checks, .additional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.status-check, .connection {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.check-icon {
+    margin-right: 10px;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+.vehicle-overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.metrics, .metrics-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.metric, .metric-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1C1F2B;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.vehicle-image {
+    position: relative;
+}
+
+.vehicle-image img {
+    width: 200px;
+}
+
+.recording {
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button {
+    background-color: #1C1F2B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2A2E3E;
 }
