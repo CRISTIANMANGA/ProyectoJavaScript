@@ -1,104 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vehicle Overview</title>
+    <title>SpaceX</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
 </head>
 <body>
-  
-        <div class="vehicle-overview">
-            <div class="metrics">
-                <div class="metric">
-                    <span class="label">PPO2</span>
-                    <span class="value">2.69 psia</span>
-                </div>
-                <div class="metric">
-                    <span class="label">CABIN TEMP</span>
-                    <span class="value">2.41 °C</span>
-                </div>
-                <div class="metric">
-                    <span class="label">CABIN PRESSURE</span>
-                    <span class="value">14.00 psia</span>
-                </div>
-                <div class="metric">
-                    <span class="label">CO2</span>
-                    <span class="value">0.07 mmHg</span>
-                </div>
-                <div class="metric">
-                    <span class="label">LOOP A</span>
-                    <span class="value">26.53 °C</span>
-                </div>
-                <div class="metric">
-                    <span class="label">LOOP B</span>
-                    <span class="value">20.00 °C</span>
-                </div>
-                <div class="metric">
-                    <span class="label">NET PWR 1</span>
-                    <span class="value">0.00 W</span>
-                </div>
-                <div class="metric">
-                    <span class="label">NET PWR 2</span>
-                    <span class="value">0.00 W</span>
-                </div>
-            </div>
-            <div class="vehicle-image">
-                <img src="spacex-vehicle.png" alt="SpaceX Vehicle">
-                <span class="recording">CABIN MICS: RECORDING</span>
-            </div>
+    <header class="header">
+        <div id="header__title" class="header__title">
+            <div class="load"></div>
         </div>
-        <div class="additional-info">
-            <div class="connection-status">
-                <div class="connection">
-                    <span class="connection-label">Manual Rigs</span>
-                    <span class="connection-status">Connected</span>
-                </div>
-                <div class="connection">
-                    <span class="connection-label">Changelog</span>
-                    <span class="connection-status">Connected</span>
-                </div>
-                <div class="connection">
-                    <span class="connection-label">Airlock</span>
-                    <span class="connection-status">Connected</span>
-                </div>
-                <div class="connection">
-                    <span class="connection-label">Wing</span>
-                    <span class="connection-status">Connected</span>
-                </div>
+    </header>
+    <main class="main">
+        <nav class="nav__description">
+            <div id="description__item" class="description__item">
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
             </div>
-            <div class="metrics-right">
-                <div class="metric-right">
-                    <span class="label">Inertial Velocity</span>
-                    <span class="value">7.68 km/s</span>
-                </div>
-                <div class="metric-right">
-                    <span class="label">Altitude</span>
-                    <span class="value">390.0 km</span>
-                </div>
-                <div class="metric-right">
-                    <span class="label">Apogee</span>
-                    <span class="value">404.4 km</span>
-                </div>
-                <div class="metric-right">
-                    <span class="label">Perigee</span>
-                    <span class="value">389.4 km</span>
-                </div>
-                <div class="metric-right">
-                    <span class="label">Inclination</span>
-                    <span class="value">51.67°</span>
-                </div>
-                <div class="metric-right">
-                    <span class="label">Range to ISS</span>
-                    <span class="value">0.02 km</span>
-                </div>
+            <div class="description__buttom">
+                <!-- <a href="#">a</a>
+                <a href="#">b</a> -->
             </div>
-        </div>
-        <div class="footer">
-            <button class="button">SYSTEMS</button>
-            <button class="button">CABIN</button>
-        </div>
-    </div>
+        </nav>
+        <section class="main__section">
+            <article id="section__information__1" class="section__information__1">
+                <div class="load" style="height: 150px;"></div>
+            </article>
+            <article class="section__information__container">
+                <div class="section__information__2">
+                    <div>
+                        <div class="load" style="height: 150px;"></div>
+                    </div>
+                    <div id="information__table__1" class="information__table__1">
+                        <div class="load" style="height: 160px;"></div>
+                    </div>
+                </div>
+                <div id="section__image" class="section__image">
+                    <div class="load" style="height: 350px"></div>
+                </div>
+                <div class="section__information__3">
+                    <div>
+                        <div class="load" style="height: 150px;"></div>
+                    </div>
+                    <div id="information__table__2" class="information__table__2">
+                        <div class="load" style="height: 160px;"></div>
+                    </div>
+                </div>
+            </article>
+            <footer class="footer">
+                <ul>
+                    <li id="rocket">
+                        <a class="select" href="#">
+                            <img src="storage/img/icons/rocket.svg">
+                            <span>Rockets</span>
+                        </a>
+                    </li>
+                    <li id="capsules">
+                        <a href="#">
+                            <img src="storage/img/icons/capsule.svg">
+                            <span>Capsules</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="comms">
+                            <img src="storage/img/icons/comms.svg">
+                            <span>comms</span>
+                        </a>
+                    </li> 
+                     <li>
+                        <a href="prop">
+                            <img src="storage/img/icons/prop.svg">
+                            <span>Prop</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mech">
+                            <img src="storage/img/icons/mech.svg">
+                            <span>Mech</span>
+                        </a>
+                    </li>
+                  
+                   
+                    <li>
+                        <a href="#">
+                            <img src="http://www.example.com">
+                            <span>a</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://www.example.com">
+                            <span>a</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://www.example.com">
+                            <span>a</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://www.example.com">
+                            <span>a</span>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </section>
+        <nav class="nav__information">
+            <div id="information__2" class="information__item">
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+            </div>
+            <div id="paginacion" class="information__buttom"></div>
+        </nav>
+    </main>
+
+    
+    <!-- Check icons -->
+    <!-- <i class='bx bxs-check-circle' style='color:#9499c3'  ></i>
+    <i class='bx bxs-check-circle' style='color:#40c110'  ></i>
+    <i class='bx bxs-check-circle' style='color:#ea7b15'  ></i> -->
+
+    <!-- Nav icons -->
+    <!-- <img src="storage/img/icons/rocket.svg">
+    <i class='bx bx-body' style='color:#e72d2d'></i>
+    <img src="storage/img/icons/comms.svg">
+    <img src="storage/img/icons/prop.svg">
+    <img src="storage/img/icons/mech.svg">
+    <i class='bx bxs-battery-charging bx-rotate-270' style='color:#ffffff'  ></i>
+    <i class='bx bxs-chip' style='color:#ffffff'  ></i>
+    <i class='bx bx-current-location bx-rotate-270' style='color:#ffffff'  ></i>
+    <i class='bx bxs-brightness-half' style="color: #fff"></i>  -->
+    
 </body>
 </html>
-
