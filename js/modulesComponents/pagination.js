@@ -108,7 +108,7 @@ export const clear = async()=>{
 
 const getRocketsId = async(e)=>{
     e.preventDefault();
-    // console.log(e.target);
+    console.log(e.target);
     let a = e.target.parentElement.children;
     for(let val of a){
         val.classList.remove('activo');
@@ -154,14 +154,14 @@ export const paginationRockets = async()=>{
     
     let [a1,a2,a3,a4] = div.children
     a3.click();
-    // <div class="buttom__paginacion">
-    //     <a href="#">&laquo;</a> 
-    //     <a href="#" class="activo">1</a>
-    //     <a href="#">2</a>
-    //     <a href="#">3</a>
-    //     <a href="#">4</a>
-    //     <a href="#">&raquo;</a>
-    // </div>
+     <div class="buttom__paginacion">
+     <a href="#">&laquo;</a> 
+       <a href="#" class="activo">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+    <a href="#">4</a>
+        <a href="#">&raquo;</a>
+     </div>
     
     return div;
 }
@@ -180,10 +180,10 @@ const getCapsulesId = async(e)=>{
     e.target.classList.add('activo');
     
 
-    // let Rocket = await getAllRocketsId(e.target.id);
-    // console.log(Rocket);
+  let Rocket = await getAllRocketsId(e.target.id);
+ console.log(Rocket);
 
-    // await informationRockets(Rocket.country, Rocket.description)
+ await informationRockets(Rocket.country, Rocket.description)
     
 }
 
