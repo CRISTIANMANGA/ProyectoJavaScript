@@ -450,8 +450,9 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
-    height: 110px;
+    height: 50px;
     left: 1250px;
+    top: -30px;
 }
 
 .buttom__paginacion {
