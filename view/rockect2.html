@@ -10,6 +10,58 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/main.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .textopapus {
+          font-family: Arial, sans-serif;
+          color: #ffffff;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 20px;
+          font-weight: bold;
+            text-align: center;
+        
+
+        }
+        .texto2 {
+            font-family: Arial, sans-serif;
+          color: #ffffff;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 20px;
+          font-weight: bold;
+            text-align: center;
+        
+        }
+        .container {
+          text-align: center;
+        }
+        .link-card {
+          background-color: #1e1e1e;
+          border: 2px solid #333;
+          border-radius: 8px;
+          margin: 20px;
+          padding: 20px;
+          transition: transform 0.3s, background-color 0.3s;
+          display: inline-block;
+          width: 300px;
+          cursor: pointer;
+        }
+        .link-card:hover {
+          background-color: #333;
+          transform: scale(1.05);
+        }
+        .link-card img {
+          width: 100%;
+          border-radius: 8px;
+        }
+        .link-card h2 {
+          margin: 15px 0 10px;
+        }
+      </style>
 </head>
 <body>
     
@@ -69,8 +121,14 @@
                 <div class="section__information__2">
                     
                     <div>
-                            <div class="" style="">
-                            <img src="storage/img/icons/1fFA.gif" alt="Rocket Launch Animation"></div>
+                          <div class="container">
+                                    <div class="link-card" onclick="window.location.href='Lineadetiempo.html'">
+                                      
+                                      <h2 class="textopapus">Línea de Tiempo</h2>
+                                      <p>.</p>
+                                    </div>
+                            
+                            <img src="" alt=""></div>
                     
                     </div>
                     <div id="information__table__1" class="information__table__1"><h3>Information rocket</h3><hr><div class="table__container__1"><div><span>Type</span>
@@ -78,20 +136,25 @@
                         <div><span>Number of propellants</span><strong>0</strong></div><div><span>Landing legs</span><strong>4</strong></div>
                         <div><span>Leg material</span><strong>carbon fiber</strong></div></div></div>
                 </div>
-                <div id="section__image" class="section__image"><div class="carousel__item"><img src="https://farm5.staticflickr.com/4599/38583829295_581f34dd84_b.jpg" referrerpolicy="no-referrer"></div>
-                <div class="carousel__item"><img src="https://farm5.staticflickr.com/4645/38583830575_3f0f7215e6_b.jpg" referrerpolicy="no-referrer"></div><div class="carousel__item">
-                    <img src="https://farm5.staticflickr.com/4696/40126460511_b15bf84c85_b.jpg" referrerpolicy="no-referrer"></div><div class="carousel__item"><img src="https://farm5.staticflickr.com/4711/40126461411_aabc643fd8_b.jpg" referrerpolicy="no-referrer"></div></div>
+                <div id="section__image" class="section__image"><div class="carousel__item"><img src="https://farm1.staticflickr.com/929/28787338307_3453a11a77_b.jpg" referrerpolicy="no-referrer"></div><div class="carousel__item"><img src="https://farm4.staticflickr.com/3955/32915197674_eee74d81bb_b.jpg" referrerpolicy="no-referrer"></div><div class="carousel__item"><img src="https://farm1.staticflickr.com/293/32312415025_6841e30bf1_b.jpg" referrerpolicy="no-referrer"></div><div class="carousel__item"><img src="https://farm1.staticflickr.com/623/23660653516_5b6cb301d1_b.jpg" referrerpolicy="no-referrer"></div><div class="carousel__item"><img src="https://farm6.staticflickr.com/5518/31579784413_d853331601_b.jpg" referrerpolicy="no-referrer"></div><div class="carousel__item"><img src="https://farm1.staticflickr.com/745/32394687645_a9c54a34ef_b.jpg" referrerpolicy="no-referrer"></div></div>
+                
+                   
+                     </div>
                 <div class="section__information__3">
                     <div>
                         <div class="" style="height: 150px;">
-                            <img src="storage/img/icons/images.jpeg" alt="Merlin Engine Diagram">
+                            <div class="link-card" onclick="window.location.href='preguntas.html'">
+                    
+                                <h2  class="texto2">Preguntas Frecuentes</h2>
+
+                              </div>
                         </div>
                         
                     </div>
                     <div id="information__table__2" class="information__table__2"><h3>Engine information</h3><hr><div class="table__container__1"><div>
                         <span>Type</span><strong>merlin 1D+</strong></div><div><span>Maximum power loss</span><strong>2</strong></div><div>
                             <span>Engine availability</span><strong>octaweb</strong></div><div><span>Number of engines</span><strong>9</strong></div><div><span>Stage 1 fuel</span><strong>liquid oxygen</strong></div><div><span>Stage 2 fuel</span><strong>RP-1 kerosene</strong></div></div></div>
-                </div>
+               
             </article>
             <footer class="footer">
                 <ul>

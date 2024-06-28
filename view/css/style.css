@@ -56,7 +56,12 @@ body {
     text-align: center;
     color: #fff;
 }
+.lineatiempo {
+    width: 50px;
+    height: 5px;
+    background-color: var(--color--five);
 
+}
 .progress__value strong {
     display: block;
     font-size: 1.2em;
@@ -194,7 +199,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-/*  */
+
 .item__progress__bar {
     color: var(--color--five);
     display: flex;
@@ -219,6 +224,7 @@ body {
     transform: rotate(180deg); 
 }
 
+
 .section__information__container {
 
     grid-area: section__main;
@@ -236,6 +242,7 @@ body {
     grid-template-areas:
         "carusel__colum__1"
         "table__colum__1";
+    
 }
 
 .section__information__2 div:first-child {

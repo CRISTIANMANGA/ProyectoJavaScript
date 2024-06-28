@@ -10,6 +10,53 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/main.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .inforstar {
+          font-family: Arial, sans-serif;
+          font-size: 20px;
+           color: #ffffff;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+        .motoraptor {
+            font-family: Arial, sans-serif;
+          font-size: 20px;
+           color: #ffffff;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+        .container {
+          text-align: center;
+        }
+        .link-card {
+          background-color: #1e1e1e;
+          border: 2px solid #333;
+          border-radius: 8px;
+          margin: 20px;
+          padding: 20px;
+          transition: transform 0.3s, background-color 0.3s;
+          display: inline-block;
+          width: 300px;
+          cursor: pointer;
+        }
+        .link-card:hover {
+          background-color: #333;
+          transform: scale(1.05);
+        }
+        .link-card img {
+          width: 100%;
+          border-radius: 8px;
+        }
+        .link-card h2 {
+          margin: 15px 0 10px;
+        }
+      </style>
 </head>
 <body>
     
@@ -19,11 +66,15 @@
         <nav class="nav__description">
             <h3>  . </h3>
             <h3>  . </h3>
-            <div id="description__item" class="description__item"><div class="description__container"><div><img src="storage/img/icons/mech.svg"></div>
-            <div><h3>United States</h3><small>With the ability to lift into orbit over 54 metric tons (119,000 lb)--a mass equivalent to a 737 jetliner loaded with passengers, crew, luggage and fuel--Falcon Heavy can lift more than twice the payload of the next closest operational vehicle, the Delta IV Heavy, at one-third the cost.</small></div>
-        </div><div class="description__container"><div><img src="storage/img/icons/mech.svg"></div><div><h3>The estimated cost per rocket launch</h3><small>$ 90.000.000</small></div></div><div class="description__container"><div><img src="storage/img/icons/mech.svg"></div>
-        <div><h3>The date of the first flight of the rocket</h3><small>2018-02-06</small></div></div><div class="description__container"><div>
-            <img src="storage/img/icons/mech.svg"></div><div><h3>Read more about the coete</h3><a href="https://en.wikipedia.org/wiki/Falcon_Heavy" target="_blank">Wikipedia</a></div></div></div>
+            <div id="description__item" class="description__item"><div class="description__container"><div>
+                <img src="storage/img/icons/mech.svg"></div><div><h3>United States</h3>
+                    <small>Starship and Super Heavy Rocket represent a fully reusable transportation system designed to service all Earth orbit needs as well as the Moon and Mars. This two-stage vehicle — composed of the Super Heavy rocket (booster) and Starship (ship) — will eventually replace Falcon 9, Falcon Heavy and Dragon.</small></div>
+                </div><div class="description__container"><div><img src="storage/img/icons/mech.svg"></div>
+                <div><h3>The estimated cost per rocket launch</h3><small>$ 7.000.000</small></div></div>
+                <div class="description__container"><div><img src="storage/img/icons/mech.svg"></div>
+                <div><h3>The date of the first flight of the rocket</h3><small>2021-12-01</small></div></div>
+                <div class="description__container"><div><img src="storage/img/icons/mech.svg"></div><div>
+                    <h3>Read more about the coete</h3><a href="https://en.wikipedia.org/wiki/SpaceX_Starship" target="_blank">Wikipedia</a></div></div></div>
             <div class="description__buttom">
                 <!-- <a href="#">a</a>
                 <a href="#">b</a> -->
@@ -38,29 +89,10 @@
 
         </nav>
         <section class="main__section">
-            <article id="section__information__1" class="section__information__1">
-                <div class="" style="height: 150px;"></div>
-            </article>
-            <article id="section__information__1" class="section__information__1">
-                <div class="carousel__item" style="--percentage: 47.47%;">
-                    <div class="item__progress__bar">
-                        <div class="progress__value">
-                            <strong>Atmospheric acceleration</strong>
-                            <small>47.47 %</small>
-                            <small>845 kN <br> 190.000 Lbf</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel__item" style="--percentage: 46.63%;">
-                    
-                    <div class="item__progress__bar">
-                        <div class="progress__value">
-                            <strong>Speed in space</strong>
-                            <small>46.63 %</small>
-                            <small>914 kN <br> 205.500 Lbf</small>
-                        </div>
-                    </div>
-                </div>
+            <article id="section__information__1" class="section__information__1"><div class="carousel__item"><div class="item__progress__bar" style="background: radial-gradient(closest-side, #1d1f38 85%, transparent 85% 100%), conic-gradient(var(--color--three) 100%, transparent 0);"><div 
+                class="progress__value"><strong>Atmospheric acceleration</strong><small>100.00 %</small><small>1.780 kN <br> 400.000 Lbf</small></div></div>
+            </div><div class="carousel__item"><div class="item__progress__bar" style="background: radial-gradient(closest-side, #1d1f38 85%, transparent 85% 100%), conic-gradient(var(--color--three) 100%, transparent 0);"><div
+                 class="progress__value"><strong>Speed in space</strong><small>100.00 %</small><small>1.960 kN <br> 440.000 Lbf</small></div></div></div></article>
                 
             </article>
             
@@ -68,28 +100,27 @@
                 
                 <div class="section__information__2">
                     
-                    <div>
-                            <div class="" style="">
-                            <img src="storage/img/icons/1fFA.gif" alt="Rocket Launch Animation"></div>
-                    
-                    </div>
-                    <div id="information__table__1" class="information__table__1"><h3>Information rocket</h3><hr><div class="table__container__1"><div><span>Type</span><strong>rocket</strong></div>
-                    <div><span>Rocket in service</span><strong>Active</strong></div><div><span>Number of stages</span><strong>2</strong></div>
-                    <div><span>Number of propellants</span><strong>2</strong></div><div><span>Landing legs</span><strong>12</strong></div><div><span>Leg material</span><strong>carbon fiber</strong></div></div></div>
+                    <div class="link-card" onclick="window.location.href='tarjetasinformativas.html'">
+         
+                        <h2 class="inforstar">Información del Starship</h2>
+                     
+                      </div>
+                    <div id="information__table__1" class="information__table__1"><h3>Information rocket</h3><hr><div class="table__container__1"><div><span>Type</span><strong>rocket</strong></div><div><span>Rocket in service</span><strong>Low</strong></div><div><span>Number of stages</span><strong>2</strong></div><div><span>Number of propellants</span><strong>0</strong></div><div><span>Landing legs</span><strong>6</strong></div><div><span>Leg material</span><strong>stainless steel</strong></div></div></div>
                 </div>
-                <div id="section__image" class="section__image"><div class="carousel__item"><img src="https://farm5.staticflickr.com/4599/38583829295_581f34dd84_b.jpg" referrerpolicy="no-referrer"></div>
-                <div class="carousel__item"><img src="https://farm5.staticflickr.com/4645/38583830575_3f0f7215e6_b.jpg" referrerpolicy="no-referrer"></div><div class="carousel__item">
-                    <img src="https://farm5.staticflickr.com/4696/40126460511_b15bf84c85_b.jpg" referrerpolicy="no-referrer"></div><div class="carousel__item"><img src="https://farm5.staticflickr.com/4711/40126461411_aabc643fd8_b.jpg" referrerpolicy="no-referrer"></div></div>
+                <div id="section__image" class="section__image"><div id="section__image" class="section__image"><div class="carousel__item"><img src="https://live.staticflickr.com/65535/48954138962_ee541e6755_b.jpg" referrerpolicy="no-referrer"></div><div class="carousel__item"><img src="https://live.staticflickr.com/65535/48953946911_e60c5bcc5c_b.jpg" referrerpolicy="no-referrer"></div><div class="carousel__item"><img src="https://live.staticflickr.com/65535/48954138922_9c42173f08_b.jpg" referrerpolicy="no-referrer"></div><div class="carousel__item"><img src="https://live.staticflickr.com/65535/48953947006_313f01ec93_b.jpg" referrerpolicy="no-referrer"></div></div>
+                    </div>
                 <div class="section__information__3">
                     <div>
                         <div class="" style="height: 150px;">
-                            <img src="storage/img/icons/images.jpeg" alt="Merlin Engine Diagram">
+                            <div class="link-card" onclick="window.location.href='motorshar.html'">
+                               
+                                <h2 class="motoraptor">Información del Motor Raptor</h2>
+                               
+                              </div>
                         </div>
                         
                     </div>
-                    <div id="information__table__2" class="information__table__2"><h3>Engine information</h3><hr><div class="table__container__1"><div><span>Type</span><strong>merlin 1D+</strong></div>
-                    <div><span>Maximum power loss</span><strong>6</strong></div><div><span>Engine availability</span><strong>octaweb</strong></div><div><span>Number of engines</span><strong>27</strong></div><div><span>Stage 1 fuel</span><strong>liquid oxygen</strong></div>
-                    <div><span>Stage 2 fuel</span><strong>RP-1 kerosene</strong></div></div></div>
+                    <div id="information__table__2" class="information__table__2"><h3>Engine information</h3><hr><div class="table__container__1"><div><span>Type</span><strong>raptor </strong></div><div><span>Maximum power loss</span><strong>0</strong></div><div><span>Engine availability</span><strong></strong></div><div><span>Number of engines</span><strong>37</strong></div><div><span>Stage 1 fuel</span><strong>liquid oxygen</strong></div><div><span>Stage 2 fuel</span><strong>liquid methane</strong></div></div></div>
                 </div>
             </article>
             <footer class="footer">
@@ -153,12 +184,18 @@
         </section>
         <nav class="nav__information">
             <h1>     .</h1>
-           <div id="information__2" class="information__item"><div class="information__container"><div><label>Diameter rocket shield :</label><progress max="5.2" value="5.2">5.2%</progress></div><div><span>5,2 M <br> 17,1 F</span></div></div><div class="information__container"><div><label>Height rocket shield :</label><progress max="13.1" value="13.1">13.1%</progress></div><div><span>13,1 M <br> 43 F</span></div></div><div class="information__container">
-            <div><label>Rocket weight :</label><progress max="1420788" value="1420788">1420788%</progress></div><div><span>1.420.788 kg <br> 3.125.735 lb</span></div></div><div class="information__container"><div><label>Low Earth Orbit :</label><progress max="150000" value="63800">63800%</progress></div><div><span>63.800 kg <br> 140.660 lb</span></div></div><div class="information__container"><div><label>Geosynchronous Transfer Orbit :</label><progress 
-                max="150000" value="26700">26700%</progress></div><div><span>26.700 kg <br> 58.860 lb</span></div></div><div class="information__container"><div><label>Mars Orbit :</label><progress max="150000" value="16800">16800%</progress></div><div><span>16.800 kg <br> 37.040 lb</span></div>
-            </div><div class="information__container"><div><label>Pluto Orbit :</label><progress max="150000" value="3500">3500%</progress></div><div><span>3.500 kg <br> 7.720 lb</span></div></div><div class="information__container"><div><label>Rocket Height :</label><progress 
-                    max="118" value="70">70%</progress></div><div><span>70 M <br> 229,6 F</span></div></div><div class="information__container"><div><label>Rocket diameter :</label><progress max="12.2" value="12.2">12.2%</progress></div><div><span>12,2 M <br> 39,9 F</span></div></div><div class="information__container"><div><label>Diameter rocket shield :</label><progress max="5.2" value="5.2">5.2%</progress></div>
-                    <div><span>5,2 M <br> 17,1 F</span></div></div><div class="information__container"><div><label>Height rocket shield :</label><progress max="13.1" value="13.1">13.1%</progress></div><div><span>13,1 M <br> 43 F</span></div></div></div>
+            <div id="information__2" class="information__item"><div class="information__container"><div>
+                <label>Rocket weight :</label><progress max="1420788" value="1335000">1335000%</progress></div>
+                <div><span>1.335.000 kg <br> 2.943.000 lb</span></div></div><div class="information__container"><div>
+                    <label>Low Earth Orbit :</label><progress max="150000" value="150000">150000%</progress></div><div>
+                        <span>150.000 kg <br> 330.000 lb</span></div></div><div class="information__container"><div
+                            ><label>Mars Orbit :</label><progress max="150000" value="100000">100000%</progress></div><div>
+                                <span>100.000 kg <br> 220.000 lb</span></div></div><div class="information__container"><div>
+                                    <label>Moon Orbit :</label><progress max="150000" value="100000">100000%</progress></div>
+                                    <div><span>100.000 kg <br> 220.000 lb</span></div></div><div class="information__container"><div>
+                                        <label>Rocket Height :</label><progress max="118" value="118">118%</progress></div><div>
+                                            <span>118 M <br> 387 F</span></div></div><div class="information__container"><div><label>Rocket diameter :</label>
+                                                <progress max="12.2" value="9">9%</progress></div><div><span>9 M <br> 30 F</span></div></div></div>
             <div id="paginacion" class="information__buttom"></div>
         </nav>
     </main>
