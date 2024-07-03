@@ -31,7 +31,10 @@ body {
 }
 
 #left {
-    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 30vw;    
 }
 
 #left img {

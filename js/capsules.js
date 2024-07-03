@@ -39,7 +39,7 @@ const getAllDetailDataCapsules = async (capsuleId) => {
                 capsuleDetails.innerHTML = /*html*/`
                 <section class='down'>
                 <div id='imgCapsule'>
-                    <img src="../storage/img/spaceCapsule.svg">
+                    <img src="../storage/img/capsulas.png">
                 </div>
                 <div id='down_info_box'>
                 <h2>${capsule_serial}</h2>

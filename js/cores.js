@@ -45,7 +45,7 @@ const getAllDetailDatacores = async (coreId) => {
                 coreDetails.innerHTML = /*html*/`
                 <section id='main'>
                 <div id='left'>
-                <img src="../storage/img/coreImg.svg">
+                <img src="../storage/img/cores.png">
                 </div>
                 <div id='right'>
                 <h2>${core_serial}</h2> 

@@ -126,16 +126,16 @@ const crearGaleriaBotones = async () => {
         const buttonCountContainer = document.querySelector('#button_container_counts_ID');// Localiza el contenedor de conteo de botones en el DOM con otro hechizo de localización
         if (buttonCountContainer) {// Si encuentra el contenedor de conteo de botones...
             buttonCountContainer.innerHTML = `buttons count: ${data.length}`;// Escribe en el pergamino el número total de botones creados
-        } else {// Si no encuentra el contenedor de conteo de botones...
-            console.error('Elemento con ID "button_container_counts_ID" no encontrado.');// Lanza un conjuro de error en la consola
+        } else {
+            console.error('Elemento con ID "button_container_counts_ID" no encontrado.');
         }
 
 
-        if (data.length > 0) {// Si hay al menos un launchpad en los datos...
-            getAllDetailDatalaunchpads(data[0].id);// Invoca inmediatamente los detalles del primer launchpad
+        if (data.length > 0) {
+            getAllDetailDatalaunchpads(data[0].id);
         }
-    } else {// Si no encuentra el contenedor de botones...
-        console.error('Elemento con ID "buttons-container" no encontrado.'); // Lanza un conjuro de error en la consola
+    } else {
+        console.error('Elemento con ID "buttons-container" no encontrado.'); 
     }
 };
-crearGaleriaBotones();// Lanza el hechizo principal para crear la galería de botones
+crearGaleriaBotones();
