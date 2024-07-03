@@ -1,0 +1,181 @@
+/* dragons.css */
+
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(16, 38, 67);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    right: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left {
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.left h2 {
+    margin-bottom: 20px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.middle_up img {
+    width: 350px;
+    border-radius: 100%;
+}
+
+.middle_down {
+    display: flex;
+    padding: 20px;
+}
+
+.middle_down_left {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.middle_down_right {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.right {
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right a {
+    color: white;
+}
+
+#bottons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+#buttons-container {
+    background-color: rgb(23, 52, 90);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    width: 210px;
+    position: relative;
+    left: 610px;
+}
+
+#buttons-container button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: white;
+    box-shadow: 5px 5px 5px #0000007c;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+#buttons-container button:hover {
+    transform: scale(1.2); /* Escala el botón al 120% en hover */
+}
+
+#button_container_counts_ID {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    right: 20px;
+}
+
+#button_container_counts_ID p {
+    color: white;
+}
+
+#bottons_html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#bottons_html a {
+    text-decoration: none;
+    color: white;
+}
+
+#icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+#bottonsForPagehtml {
+    background-color: rgb(23, 52, 90);
+    box-shadow: 5px 5px 5px #0000003a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 50px;
+}
+
+#bottonsForPagehtml a {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #0000003a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#bottonsForPagehtml a img {
+    width: 30px;
+}
