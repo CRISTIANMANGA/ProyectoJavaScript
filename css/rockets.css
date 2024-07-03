@@ -1,4 +1,4 @@
-/* rockets.css */
+@import url(variables.css);
 
 * {
     margin: 0;

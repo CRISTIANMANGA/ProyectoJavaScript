@@ -6,6 +6,55 @@
     <title>Rockets</title>
     <script type="module" src="../js/rockets.js"></script>
     <link rel="stylesheet" href="../css/rockets.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+        }
+        #title h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        #rocket-details {
+            margin-bottom: 20px;
+        }
+        #buttons-container, #button_container_counts_ID {
+            margin-bottom: 20px;
+        }
+        #bottons_html {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #bottonsForPagehtml a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 10px;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        #bottonsForPagehtml a img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 5px;
+        }
+        #bottonsForPagehtml a:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
     <div id="title">
@@ -15,64 +64,66 @@
     <section id="bottons">
         <div id="buttons-container"></div>
         <div id="button_container_counts_ID"></div>
-            <div id="bottons_html">
-
-                <div id="bottonsForPagehtml">
-                    <a href="rockets.html">
-                        <img src="../storage/img/rocketsIcon.svg">
-                        rockets
-                    </a>
-                    <a href="capsules.html">   
-                        <img src="../storage/img/capsulesIcon.svg">
-                        capsules</a>
-                    <a href="crew.html">  
-                        <img src="../storage/img/crewIcon.svg">
-                        crew
-                    </a>
-                    <a href="launches.html">  
-                        <img src="../storage/img/launchesIcon.svg">
-                        launches
-                    </a>
-                    <a href="cores.html">   
-                        <img src="../storage/img/coresIcon.svg">
-                        cores
-                    </a>
-                    <a href="landpads.html"> 
-                        <img src="../storage/img/world-svgrepo-com.svg">
-                        landpads
-                    </a>
-                    <a href="ships.html">   
-                        <img src="../storage/img/shipIcon.svg">
-                        ships
-                    </a>
-                    <a href="company.html"> 
-                        <img src="../storage/img/companyIcon.svg">
-                        company</a>
-                    <a href="dragons.html">   
-                        <img src="../storage/img/dragonsIcon.svg">
-                        dragons
-                    </a>
-                    <a href="history.html">    
-                        <img src="../storage/img/historyIcon.svg">
-                        history</a>
-                    <a href="launchpads.html">    
-                        <img src="../storage/img/launchpadsIcon.svg">
-                        launchpads</a>
-                    <a href="payloads.html">    
-                        <img src="../storage/img/payloadsIcon.svg">
-                        payloads
-                    </a>
-                    <a href="roadster.html">   
-                        <img src="../storage/img/roadsterIcon.svg">
-                        roadster
-                    </a>
-                    <a href="starlink.html">
-                        <img src="../storage/img/starlinkIcon.svg">
-                        starlink
-                    </a>
-                </div>
+        <div id="bottons_html">
+            <div id="bottonsForPagehtml">
+                <a href="rockets.html">
+                    <img src="../storage/img/rocketsIcon.svg" alt="Rockets Icon">
+                    Rockets
+                </a>
+                <a href="capsules.html">
+                    <img src="../storage/img/capsulesIcon.svg" alt="Capsules Icon">
+                    Capsules
+                </a>
+                <a href="crew.html">
+                    <img src="../storage/img/crewIcon.svg" alt="Crew Icon">
+                    Crew
+                </a>
+                <a href="launches.html">
+                    <img src="../storage/img/launchesIcon.svg" alt="Launches Icon">
+                    Launches
+                </a>
+                <a href="cores.html">
+                    <img src="../storage/img/coresIcon.svg" alt="Cores Icon">
+                    Cores
+                </a>
+                <a href="landpads.html">
+                    <img src="../storage/img/world-svgrepo-com.svg" alt="Landpads Icon">
+                    Landpads
+                </a>
+                <a href="ships.html">
+                    <img src="../storage/img/shipIcon.svg" alt="Ships Icon">
+                    Ships
+                </a>
+                <a href="company.html">
+                    <img src="../storage/img/companyIcon.svg" alt="Company Icon">
+                    Company
+                </a>
+                <a href="dragons.html">
+                    <img src="../storage/img/dragonsIcon.svg" alt="Dragons Icon">
+                    Dragons
+                </a>
+                <a href="history.html">
+                    <img src="../storage/img/historyIcon.svg" alt="History Icon">
+                    History
+                </a>
+                <a href="launchpads.html">
+                    <img src="../storage/img/launchpadsIcon.svg" alt="Launchpads Icon">
+                    Launchpads
+                </a>
+                <a href="payloads.html">
+                    <img src="../storage/img/payloadsIcon.svg" alt="Payloads Icon">
+                    Payloads
+                </a>
+                <a href="roadster.html">
+                    <img src="../storage/img/roadsterIcon.svg" alt="Roadster Icon">
+                    Roadster
+                </a>
+                <a href="starlink.html">
+                    <img src="../storage/img/starlinkIcon.svg" alt="Starlink Icon">
+                    Starlink
+                </a>
             </div>
+        </div>
     </section>
-
 </body>
 </html>

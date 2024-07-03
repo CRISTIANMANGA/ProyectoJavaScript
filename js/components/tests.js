@@ -1,4 +1,4 @@
-// Constantes de URLs de API
+
 const API_URLS = {
     ROCKETS: "https://api.spacexdata.com/v4/rockets",
     CAPSULES: "https://api.spacexdata.com/v4/capsules",

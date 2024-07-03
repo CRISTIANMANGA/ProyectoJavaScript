@@ -1,20 +1,10 @@
-// ______________________________________________________________________________________________________________________________________________________________________________//
-// PORTALES DE CONEXION
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
 const API_URL_COMPANY = "https://api.spacexdata.com/v4/company";
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-// HECHIZO DE INVOCACION DE TODOS LOS NOMBRES DE LOS companyS
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 export const getAllcompanyNames = async () => {
     try {
         let response = await fetch(API_URL_COMPANY);
         let data = await response.json();
         
-        // Debido a que data no es un array, no se puede usar map directamente.
-        // Si necesitas extraer nombres de subobjetos, aquí se realiza manualmente.
         let companyNames = data.name ? [data.name] : [];
         
         return companyNames;
@@ -26,16 +16,11 @@ export const getAllcompanyNames = async () => {
 
 console.log(await getAllcompanyNames());
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
-// HECHIZO PODEROSO DE INVOCACION DE LA INFO DE LOS companyS EN BOTONES QUE AL PRESIONAR INVOCAS
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
 const getAllDetailDatacompanys = async (companyId) => {
     try {
         const response = await fetch(API_URL_COMPANY);
         const data = await response.json();
 
-        // La API solo devuelve un objeto, así que usamos directamente data
         if (data.id === companyId) {
             const {
                 headquarters: {
@@ -69,9 +54,7 @@ const getAllDetailDatacompanys = async (companyId) => {
 
             const companyDetails = document.getElementById('company-details');
             if (companyDetails) {
-                companyDetails.innerHTML = 
-                /*html*/
-                `
+                companyDetails.innerHTML = /*html*/`
                 <section class='main'>
                 <section class='left'>
                 <img src="../storage/img/spaceXlogo.png">     
@@ -111,5 +94,4 @@ const getAllDetailDatacompanys = async (companyId) => {
     }
 };
 
-// Invoca el hechizo con el ID específico del company
 getAllDetailDatacompanys('5eb75edc42fea42237d7f3ed');
