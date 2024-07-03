@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Launchpads</title>
-    <script type="module" src="../js/launchpads.js"></script>
+    <script type="module" src="../js/launchpads.js" defer></script>
     <link rel="stylesheet" href="../css/launchpads.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #121212; /* Fondo oscuro */
+            color: #e0e0e0; /* Texto claro */
             text-align: center;
             padding: 20px;
         }
@@ -38,7 +38,7 @@
             padding: 10px;
             width: 100px;
             height: 100px;
-            background-color: #28a745;
+            background-color: #1f1f1f;
             color: #fff;
             text-decoration: none;
             border-radius: 10px;
@@ -50,7 +50,7 @@
             margin-bottom: 5px;
         }
         #bottonsForPagehtml a:hover {
-            background-color: #218838;
+            background-color: #333;
             transform: scale(1.05);
         }
     </style>
@@ -61,6 +61,8 @@
     </div>
     <div id="launchpads-details"></div>
     <section id="bottons">
+        <div id="buttons-container"></div>
+        <div id="button_container_counts_ID"></div>
         <div id="bottons_html">
             <div id="bottonsForPagehtml">
                 <a href="rockets.html">

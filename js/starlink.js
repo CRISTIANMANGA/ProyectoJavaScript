@@ -116,7 +116,7 @@ const getAllDetailDataStarlinks = async (starlinkId) => { // Corregido el nombre
                     <p><strong>MEAN_MOTION_DDOT:</strong> ${MEAN_MOTION_DDOT}</p>
                     </section>
                     <section class='middle'>
-                    <img src="../storage/img/starlinkIcon.svg">
+                    <img src="../storage/img/starlink.png">
                     </section>
                     <section class='right'>
                     <p><strong>SEMIMAJOR_AXIS:</strong> ${SEMIMAJOR_AXIS}</p>
