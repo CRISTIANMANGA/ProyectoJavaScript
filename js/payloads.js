@@ -1,20 +1,6 @@
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//PORTALES DE CONEXION
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 const API_URL_PAYLOADS="https://api.spacexdata.com/v4/payloads";
-
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO DE INVOCACION DE TODOS LOS NOMBRES DE LOS payloadS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 
@@ -34,14 +20,7 @@ export const getAllpayloadNames = async () => {// El mago de datos 'getAllpayloa
 };
 console.log(await getAllpayloadNames());// El mago invoca su hechizo 'getAllpayloadNames' y muestra los resultados en la consola mágica
 
-
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO PODEROSO DE INVOCACION DE LA INFO DE LOS payloadS EN BOTONES QUE AL PRESIONAR INVOCAS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
+________________________________________________________________________________________________________________________________________________//
 
 
 
@@ -170,7 +149,6 @@ const getAllDetailDatapayloads = async (payloadId) => {
 // ______________________________________________________________________________________________________________________________________________________________________________//
 
 
-// HECHIZO para obtener todas las IDs de los cohetes y crear botones dinámicos
 const crearGaleriaBotones = async () => {
     const response = await fetch(API_URL_PAYLOADS); // Invoca un conjuro para obtener el pergamino mágico con datos de los cohetes
     const data = await response.json();// Desenrolla el pergamino y extrae su esencia en forma de datos JSON

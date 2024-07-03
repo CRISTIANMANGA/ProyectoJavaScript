@@ -1,20 +1,6 @@
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//PORTALES DE CONEXION
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 const API_URL_LAUNCHPADS="https://api.spacexdata.com/v4/launchpads";
-
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO DE INVOCACION DE TODOS LOS NOMBRES DE LOS launchpadS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 
@@ -35,13 +21,6 @@ export const getAlllaunchpadNames = async () => {// El mago de datos 'getAlllaun
 console.log(await getAlllaunchpadNames());// El mago invoca su hechizo 'getAlllaunchpadNames' y muestra los resultados en la consola mágica
 
 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO PODEROSO DE INVOCACION DE LA INFO DE LOS launchpadS EN BOTONES QUE AL PRESIONAR INVOCAS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 
@@ -85,7 +64,6 @@ const getAllDetailDatalaunchpads = async (launchpadId) => {
 // ______________________________________________________________________________________________________________________________________________________________________________//
 
 
-// El mago invoca al DOM para encontrar la cabaña específica donde se mostrarán los detalles del launchpad
             const launchpadDetails = document.getElementById('launchpads-details');
             if (launchpadDetails) {
                 launchpadDetails.innerHTML =  // El mago conjura el hechizo "innerHTML" para imprimir dinámicamente en el pergamino
@@ -127,10 +105,8 @@ const getAllDetailDatalaunchpads = async (launchpadId) => {
     }
 };
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
-// HECHIZO para obtener todas las IDs de los launchpads y crear botones dinámicos
 const crearGaleriaBotones = async () => {
     const response = await fetch(API_URL_LAUNCHPADS); // Invoca un conjuro para obtener el pergamino mágico con datos de los launchpads
     const data = await response.json();// Desenrolla el pergamino y extrae su esencia en forma de datos JSON

@@ -1,20 +1,8 @@
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//PORTALES DE CONEXION
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 const API_URL_DRAGONS="https://api.spacexdata.com/v4/dragons";
 
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO DE INVOCACION DE TODOS LOS NOMBRES DE LOS dragons 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 export const getAlldragonsNames = async () => {// El mago de datos 'getAlldragonsNames' lanza un hechizo asincrónico para obtener todos los nombres de los dragons
@@ -32,13 +20,6 @@ export const getAlldragonsNames = async () => {// El mago de datos 'getAlldragon
 };
 console.log(await getAlldragonsNames());// El mago invoca su hechizo 'getAlldragonsNames' y muestra los resultados en la consola mágica
 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO PODEROSO DE INVOCACION DE LA INFO DE LOS dragons EN BOTONES QUE AL PRESIONAR INVOCAS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 const getAllDetailDatadragons = async (landpadId) => {
@@ -212,10 +193,7 @@ const getAllDetailDatadragons = async (landpadId) => {
     }
 };
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
-
-// HECHIZO para obtener todas las IDs de los dragons y crear botones dinámicos
 const crearGaleriaBotones = async () => {
     const response = await fetch(API_URL_DRAGONS); // Invoca un conjuro para obtener el pergamino mágico con datos de los dragons
     const data = await response.json();// Desenrolla el pergamino y extrae su esencia en forma de datos JSON

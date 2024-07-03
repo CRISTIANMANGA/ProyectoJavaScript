@@ -1,16 +1,8 @@
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
-//PORTALES DE CONEXION
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 const API_URL_STARLINK = "https://api.spacexdata.com/v4/starlink"; // Corregido el URL
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
-//HECHIZO DE INVOCACION DE TODOS LOS NOMBRES DE LOS starlinkS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 export const getAllStarlinkNames = async () => { // Corregido el nombre de la función para seguir la convención camelCase
     try {
@@ -24,13 +16,7 @@ export const getAllStarlinkNames = async () => { // Corregido el nombre de la fu
         throw error; // El mago lanza el error para que otros hechiceros puedan manejarlo
     }
 };
-// console.log(await getAllStarlinkNames()); // Comentado porque `await` solo se puede usar dentro de una función asíncrona
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-//HECHIZO PODEROSO DE INVOCACION DE LA INFO DE LOS starlinkS EN BOTONES QUE AL PRESIONAR INVOCAS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 const getAllDetailDataStarlinks = async (starlinkId) => { // Corregido el nombre de la función para seguir la convención camelCase
     try {
@@ -94,7 +80,7 @@ const getAllDetailDataStarlinks = async (starlinkId) => { // Corregido el nombre
 
             console.log('Datos del starlink:', starlink); // Imprime en el pergamino los datos desencantados del starlink
 
-            // ______________________________________________________________________________________________________________________________________________________________________________//
+       
 
             // El mago invoca al DOM para encontrar la cabaña específica donde se mostrarán los detalles del starlink
             const starlinkDetails = document.getElementById('starlink-details');
@@ -170,9 +156,7 @@ const getAllDetailDataStarlinks = async (starlinkId) => { // Corregido el nombre
     }
 };
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
-// HECHIZO para obtener todas las IDs de los starlinks y crear botones dinámicos
 const crearGaleriaBotones = async () => {
     try {
         const response = await fetch(API_URL_STARLINK); // Invoca un conjuro para obtener el pergamino mágico con datos de los starlinks

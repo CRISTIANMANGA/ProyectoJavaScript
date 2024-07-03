@@ -1,21 +1,6 @@
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//PORTALES DE CONEXION
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 const API_URL_HISTORY="https://api.spacexdata.com/v4/history";
-
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO DE INVOCACION DE TODOS LOS NOMBRES DE LOS historyS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
 
 
 
@@ -104,7 +89,6 @@ const getAllDetailDatahistory = async (historyId) => {
 // ______________________________________________________________________________________________________________________________________________________________________________//
 
 
-// HECHIZO para obtener todas las IDs de los historys y crear botones dinámicos
 const crearGaleriaBotones = async () => {
     const response = await fetch(API_URL_HISTORY); // Invoca un conjuro para obtener el pergamino mágico con datos de los historys
     const data = await response.json();// Desenrolla el pergamino y extrae su esencia en forma de datos JSON

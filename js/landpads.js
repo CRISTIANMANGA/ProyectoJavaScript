@@ -1,20 +1,7 @@
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//PORTALES DE CONEXION
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 const API_URL_LANDPADS="https://api.spacexdata.com/v4/landpads";
 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO DE INVOCACION DE TODOS LOS NOMBRES DE LOS landpads 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 export const getAlllandpadsNames = async () => {// El mago de datos 'getAlllandpadsNames' lanza un hechizo asincrónico para obtener todos los nombres de los landpads
@@ -32,13 +19,7 @@ export const getAlllandpadsNames = async () => {// El mago de datos 'getAlllandp
 };
 console.log(await getAlllandpadsNames());// El mago invoca su hechizo 'getAlllandpadsNames' y muestra los resultados en la consola mágica
 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO PODEROSO DE INVOCACION DE LA INFO DE LOS landpads EN BOTONES QUE AL PRESIONAR INVOCAS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
+____________________________________________________________________________________________________________________________________________________________//
 
 
 const getAllDetailDatalandpads = async (landpadId) => {
@@ -115,10 +96,7 @@ const getAllDetailDatalandpads = async (landpadId) => {
     }
 };
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
-
-// HECHIZO para obtener todas las IDs de los landpads y crear botones dinámicos
 const crearGaleriaBotones = async () => {
     const response = await fetch(API_URL_LANDPADS); // Invoca un conjuro para obtener el pergamino mágico con datos de los landpads
     const data = await response.json();// Desenrolla el pergamino y extrae su esencia en forma de datos JSON

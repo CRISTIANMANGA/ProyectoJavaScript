@@ -1,20 +1,6 @@
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//PORTALES DE CONEXION
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 const API_URL_ROCKETS="https://api.spacexdata.com/v4/rockets";
-
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO DE INVOCACION DE TODOS LOS NOMBRES DE LOS ROCKETS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 
@@ -35,13 +21,6 @@ export const getAllRocketNames = async () => {// El mago de datos 'getAllRocketN
 console.log(await getAllRocketNames());// El mago invoca su hechizo 'getAllRocketNames' y muestra los resultados en la consola mágica
 
 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO PODEROSO DE INVOCACION DE LA INFO DE LOS ROCKETS EN BOTONES QUE AL PRESIONAR INVOCAS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 
@@ -160,15 +139,7 @@ const getAllDetailDataRockets = async (rocketId) => {
 
             const propellantCount = [propellant_1, propellant_2].filter(Boolean).length;
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
-
-
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-// El mago invoca al DOM para encontrar la cabaña específica donde se mostrarán los detalles del cohete
         const rocketDetails = document.getElementById('rocket-details');
             if (rocketDetails) {
                 rocketDetails.innerHTML =  // El mago conjura el hechizo "innerHTML" para imprimir dinámicamente en el pergamino
@@ -410,8 +381,6 @@ const getAllDetailDataRockets = async (rocketId) => {
                         console.error('Elemento con ID "Height_composite_fairing_data" no encontrado.');
                     }
                 }
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
 
             } else {
                 console.error('Elemento con ID "rocket-details" no encontrado.');// Si la cabaña no se encuentra, el mago muestra un error en la consola mágica
@@ -424,10 +393,6 @@ const getAllDetailDataRockets = async (rocketId) => {
     }
 };
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-// HECHIZO para obtener todas las IDs de los cohetes y crear botones dinámicos
 const crearGaleriaBotones = async () => {
     const response = await fetch(API_URL_ROCKETS); // Invoca un conjuro para obtener el pergamino mágico con datos de los cohetes
     const data = await response.json();// Desenrolla el pergamino y extrae su esencia en forma de datos JSON

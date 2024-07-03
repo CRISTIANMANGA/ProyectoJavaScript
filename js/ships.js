@@ -1,22 +1,6 @@
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//PORTALES DE CONEXION
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 const API_URL_SHIPS="https://api.spacexdata.com/v4/ships";
-
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO DE INVOCACION DE TODOS LOS NOMBRES DE LOS shipS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
 
 
 export const getAllshipNames = async () => {// El mago de datos 'getAllshipNames' lanza un hechizo asincrónico para obtener todos los nombres de los ships
@@ -34,14 +18,6 @@ export const getAllshipNames = async () => {// El mago de datos 'getAllshipNames
 };
 console.log(await getAllshipNames());// El mago invoca su hechizo 'getAllshipNames' y muestra los resultados en la consola mágica
 
-
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO PODEROSO DE INVOCACION DE LA INFO DE LOS shipS EN BOTONES QUE AL PRESIONAR INVOCAS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 
@@ -87,10 +63,6 @@ const getAllDetailDataships = async (shipId) => {
             console.log('Datos del ship:', ship);// Imprime en el pergamino los datos desencantados del ship
 
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-// El mago invoca al DOM para encontrar la cabaña específica donde se mostrarán los detalles del ship
             const shipDetails = document.getElementById('ships-details');
             if (shipDetails) {
                 shipDetails.innerHTML =  // El mago conjura el hechizo "innerHTML" para imprimir dinámicamente en el pergamino
@@ -142,9 +114,9 @@ const getAllDetailDataships = async (shipId) => {
 // ______________________________________________________________________________________________________________________________________________________________________________//
 
 
-// HECHIZO para obtener todas las IDs de los ships y crear botones dinámicos
+
 const crearGaleriaBotones = async () => {
-    const response = await fetch(API_URL_SHIPS); // Invoca un conjuro para obtener el pergamino mágico con datos de los ships
+    const response = await fetch(API_URL_SHIPS); 
     const data = await response.json();// Desenrolla el pergamino y extrae su esencia en forma de datos JSON
 
     console.log('Datos obtenidos para crear botones:', data); // Revela en la esfera de cristal los datos obtenidos
@@ -167,11 +139,11 @@ const crearGaleriaBotones = async () => {
         }
 
 
-        if (data.length > 0) {// Si hay al menos un ship en los datos...
-            getAllDetailDataships(data[0].id);// Invoca inmediatamente los detalles del primer ship
+        if (data.length > 0) {
+            getAllDetailDataships(data[0].id);
         }
     } else {// Si no encuentra el contenedor de botones...
         console.error('Elemento con ID "buttons-container" no encontrado.'); // Lanza un conjuro de error en la consola
     }
 };
-crearGaleriaBotones();// Lanza el hechizo principal para crear la galería de botones
+crearGaleriaBotones();

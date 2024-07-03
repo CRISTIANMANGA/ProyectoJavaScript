@@ -1,20 +1,8 @@
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//PORTALES DE CONEXION
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
+____________________________________________________________________________________________________________________________________________________________________//
 
 
 const API_URL_CREW="https://api.spacexdata.com/v4/crew";
 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO DE INVOCACION DE TODOS LOS NOMBRES DE LOS crewS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 
@@ -36,12 +24,7 @@ console.log(await getAllCrewNames());// El mago invoca su hechizo 'getAllcrewNam
 
 
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO PODEROSO DE INVOCACION DE LA INFO DE LOS crewS EN BOTONES QUE AL PRESIONAR INVOCAS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
+__________________________________________________________________________________________________________________________________________________________________//
 
 
 
@@ -68,10 +51,7 @@ const getAllDetailDatacrews = async (crewId) => {
             console.log('Datos de la crew:', crew);// Imprime en el pergamino los datos desencantados del crew
 
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
-
-// El mago invoca al DOM para encontrar la cabaña específica donde se mostrarán los detalles del crew
             const crewDetails = document.getElementById('crew-details');
             if (crewDetails) {
                 crewDetails.innerHTML =   // El mago conjura el hechizo "innerHTML" para imprimir dinámicamente en el pergamino
@@ -99,10 +79,9 @@ const getAllDetailDatacrews = async (crewId) => {
     }
 };
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
-// HECHIZO para obtener todas las IDs de los crews y crear botones dinámicos
+
 const crearGaleriaBotones = async () => {
     const response = await fetch(API_URL_CREW); // Invoca un conjuro para obtener el pergamino mágico con datos de los crews
     const data = await response.json();// Desenrolla el pergamino y extrae su esencia en forma de datos JSON

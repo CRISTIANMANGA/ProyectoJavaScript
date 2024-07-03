@@ -1,20 +1,7 @@
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//PORTALES DE CONEXION
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 const API_URL_LAUNCHES="https://api.spacexdata.com/v4/launches";
 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO DE INVOCACION DE TODOS LOS NOMBRES DE LOS launches 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 export const getAlllaunchesNames = async () => {// El mago de datos 'getAlllaunchesNames' lanza un hechizo asincrónico para obtener todos los nombres de los launches
@@ -32,13 +19,6 @@ export const getAlllaunchesNames = async () => {// El mago de datos 'getAlllaunc
 };
 console.log(await getAlllaunchesNames());// El mago invoca su hechizo 'getAlllaunchesNames' y muestra los resultados en la consola mágica
 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
-
-
-//HECHIZO PODEROSO DE INVOCACION DE LA INFO DE LOS launches EN BOTONES QUE AL PRESIONAR INVOCAS 
-
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
 
 const getAllDetailDatalaunches = async (launchesId) => {
@@ -159,10 +139,7 @@ const getAllDetailDatalaunches = async (launchesId) => {
     }
 };
 
-// ______________________________________________________________________________________________________________________________________________________________________________//
 
-
-// HECHIZO para obtener todas las IDs de los launches y crear botones dinámicos
 const crearGaleriaBotones = async () => {
     const response = await fetch(API_URL_LAUNCHES); // Invoca un conjuro para obtener el pergamino mágico con datos de los launches
     const data = await response.json();// Desenrolla el pergamino y extrae su esencia en forma de datos JSON
