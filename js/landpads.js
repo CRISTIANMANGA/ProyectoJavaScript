@@ -1,6 +1,14 @@
 
 
+
+
+
 const API_URL_LANDPADS="https://api.spacexdata.com/v4/landpads";
+
+
+
+
+
 
 
 
@@ -19,7 +27,10 @@ export const getAlllandpadsNames = async () => {// El mago de datos 'getAlllandp
 };
 console.log(await getAlllandpadsNames());// El mago invoca su hechizo 'getAlllandpadsNames' y muestra los resultados en la consola mágica
 
-____________________________________________________________________________________________________________________________________________________________//
+
+
+
+
 
 
 const getAllDetailDatalandpads = async (landpadId) => {
@@ -95,6 +106,7 @@ const getAllDetailDatalandpads = async (landpadId) => {
         console.error(`Error al obtener detalles del landpad con ID ${landpadId}: ${error.message}`);
     }
 };
+
 
 
 const crearGaleriaBotones = async () => {

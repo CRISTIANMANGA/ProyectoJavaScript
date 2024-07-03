@@ -1,6 +1,11 @@
 
 
+
+
+
+
 const API_URL_DRAGONS="https://api.spacexdata.com/v4/dragons";
+
 
 
 
@@ -19,6 +24,10 @@ export const getAlldragonsNames = async () => {// El mago de datos 'getAlldragon
     }
 };
 console.log(await getAlldragonsNames());// El mago invoca su hechizo 'getAlldragonsNames' y muestra los resultados en la consola mágica
+
+
+
+
 
 
 
@@ -192,6 +201,7 @@ const getAllDetailDatadragons = async (landpadId) => {
             console.error(`Error al obtener detalles del landpad con ID ${landpadId}: ${error.message}`);
     }
 };
+
 
 
 const crearGaleriaBotones = async () => {
